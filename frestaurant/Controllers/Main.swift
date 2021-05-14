@@ -31,7 +31,6 @@ class Main: UIViewController {
     axios.fetch(URL.restaurantList, type: RestaurantList.self) { result in
       switch result {
       case .success(let data):
-        print("Success!")
         self.restaurants = data.restaurants
       case .failure(let err):
         print("Error:", err.localizedDescription)
