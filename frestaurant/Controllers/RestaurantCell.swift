@@ -13,7 +13,7 @@ class RestaurantCell: UITableViewCell {
   @IBOutlet weak var restaurantRating: UILabel!
   @IBOutlet weak var restaurantName: UILabel!
   @IBOutlet weak var restaurantLocation: UILabel!
-  var restaurant: Restaurant?
+  var restaurant: RestaurantBrief?
   let axios = Axios.shared
 
   override func layoutSubviews() {

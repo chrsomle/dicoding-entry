@@ -10,5 +10,6 @@ import Foundation
 extension URL {
   static let restaurantList = "https://restaurant-api.dicoding.dev/list"
   static let restaurantImage = "https://restaurant-api.dicoding.dev/images/small/"
+  static let restaurantImageMedium = "https://restaurant-api.dicoding.dev/images/medium/"
   static let restaurantDetail = "https://restaurant-api.dicoding.dev/detail/"
 }

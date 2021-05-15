@@ -11,8 +11,10 @@ class Main: UIViewController {
 
   @IBOutlet weak var restaurantsTableView: UITableView!
 
+  var selectedRestaurant: RestaurantBrief?
+
   private let axios = Axios.shared
-  var restaurants = [Restaurant]() {
+  var restaurants = [RestaurantBrief]() {
     didSet {
       restaurantsTableView.reloadData()
     }
@@ -25,6 +27,14 @@ class Main: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
     getRestaurants()
+  }
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "seeDetail" {
+      if let detail = segue.destination as? Detail {
+        detail.restaurant = selectedRestaurant
+      }
+    }
   }
 
   private func getRestaurants() {
@@ -49,5 +59,10 @@ extension Main: UITableViewDelegate, UITableViewDataSource {
     let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
     cell.restaurant = restaurants[indexPath.row]
     return cell
+  }
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    selectedRestaurant = restaurants[indexPath.row]
+    performSegue(withIdentifier: "seeDetail", sender: self)
   }
 }

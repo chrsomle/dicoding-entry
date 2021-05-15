@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MoF-vd-pPN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail-->
+        <scene sceneID="Fd6-2e-uEr">
+            <objects>
+                <viewController title="Detail" id="MoF-vd-pPN" customClass="Detail" customModule="frestaurant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMq-E1-Jv0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-ic-9qZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="S2j-qM-2Md" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1250.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-vr-FSQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aWR-vr-FSQ" secondAttribute="height" multiplier="1:1" id="LKc-7r-1wW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-ZL-s7k" userLabel="Detail">
+                                                <rect key="frame" x="0.0" y="422" width="414" height="460.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZf-9l-45a">
+                                                        <rect key="frame" x="24" y="24" width="366" height="23"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2 ⭐️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmy-b4-gKg">
+                                                        <rect key="frame" x="24" y="59" width="366" height="20.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvG-Hf-ndM">
+                                                        <rect key="frame" x="24" y="91.5" width="366" height="345"/>
+                                                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="24" bottom="24" trailing="24"/>
+                                            </stackView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ew4-y3-5Cl">
+                                                <rect key="frame" x="0.0" y="890.5" width="414" height="360"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="360" id="0hP-fC-wlO"/>
+                                                </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" textLabel="Tq3-nx-Ouf" style="IBUITableViewCellStyleDefault" id="Tla-B7-R7h" customClass="MenuCell" customModule="frestaurant" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tla-B7-R7h" id="cqr-Md-RSL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tq3-nx-Ouf">
+                                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="S2j-qM-2Md" firstAttribute="top" secondItem="nN2-zn-Lri" secondAttribute="top" id="QRK-qw-k6N"/>
+                                    <constraint firstItem="S2j-qM-2Md" firstAttribute="bottom" secondItem="nN2-zn-Lri" secondAttribute="bottom" id="biJ-zT-7lM"/>
+                                    <constraint firstItem="S2j-qM-2Md" firstAttribute="centerX" secondItem="PCD-VA-wsY" secondAttribute="centerX" id="cEy-Tf-q9G"/>
+                                    <constraint firstItem="S2j-qM-2Md" firstAttribute="trailing" secondItem="nN2-zn-Lri" secondAttribute="trailing" id="hZL-SI-UTK"/>
+                                    <constraint firstItem="S2j-qM-2Md" firstAttribute="leading" secondItem="nN2-zn-Lri" secondAttribute="leading" id="nH4-w3-6Gf"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="nN2-zn-Lri"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="PCD-VA-wsY"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZN-2n-PQd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Voy-ic-9qZ" firstAttribute="top" secondItem="KZN-2n-PQd" secondAttribute="top" id="8Cq-7t-Zjv"/>
+                            <constraint firstItem="Voy-ic-9qZ" firstAttribute="leading" secondItem="KZN-2n-PQd" secondAttribute="leading" id="dGh-BN-fss"/>
+                            <constraint firstItem="Voy-ic-9qZ" firstAttribute="bottom" secondItem="KZN-2n-PQd" secondAttribute="bottom" id="sOF-4z-PIK"/>
+                            <constraint firstItem="Voy-ic-9qZ" firstAttribute="trailing" secondItem="KZN-2n-PQd" secondAttribute="trailing" id="tRF-dm-Ehb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuList" destination="Ew4-y3-5Cl" id="TY7-jc-8AE"/>
+                        <outlet property="restaurantAddress" destination="mZf-9l-45a" id="vks-pn-VQ7"/>
+                        <outlet property="restaurantPicture" destination="aWR-vr-FSQ" id="hAl-kx-RG6"/>
+                        <outlet property="restaurantRating" destination="xmy-b4-gKg" id="ScY-Fm-Ism"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJ2-Uw-fPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210.1449275362319" y="208.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
