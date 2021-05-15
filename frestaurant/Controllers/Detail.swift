@@ -40,11 +40,13 @@ class Detail: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    if let restaurant = restaurant {
+    setupData()
+  }
 
+  private func setupData() {
+    if let restaurant = restaurant {
       title = restaurant.name
       restaurantRating.text = restaurant.rating.toRating()
-
       axios.fetch(URL.restaurantDetail + restaurant.id, type: RestaurantDetail.self) { result in
         switch result {
         case .success(let data):
@@ -54,9 +56,6 @@ class Detail: UIViewController {
         }
       }
     }
-
-    menuList.dataSource = self
-    menuList.delegate = self
   }
 
 }

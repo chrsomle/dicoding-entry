@@ -98,6 +98,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Frestaurant" id="boU-kK-d6G">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Fah-tq-tSe"/>
+                        <barButtonItem key="rightBarButtonItem" image="person" catalog="system" id="auN-j7-oTp">
+                            <connections>
+                                <segue destination="wRC-ZU-FcY" kind="show" id="rFY-Hb-W0g"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="restaurantsTableView" destination="NoI-aO-ibt" id="qWH-b0-R1x"/>
@@ -107,6 +112,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="63.616071428571423"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="0o2-EM-1f0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="wRC-ZU-FcY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u5W-xm-Vsy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phy-vi-ptC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="-14"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Pbq-HD-P7O">
@@ -138,6 +153,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

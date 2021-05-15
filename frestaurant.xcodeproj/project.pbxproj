@@ -21,6 +21,8 @@
 		8336996A264E5BD100F43368 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83369969264E5BD100F43368 /* Detail.swift */; };
 		8336996C264E5C0700F43368 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8336996B264E5C0700F43368 /* Detail.storyboard */; };
 		83C8A0CC26501956001A53CB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8A0CB26501956001A53CB /* MenuCell.swift */; };
+		83C8A0CE26502519001A53CB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C8A0CD26502519001A53CB /* Profile.storyboard */; };
+		83C8A0D22650254B001A53CB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8A0D12650254B001A53CB /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		83369969264E5BD100F43368 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		8336996B264E5C0700F43368 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		83C8A0CB26501956001A53CB /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		83C8A0CD26502519001A53CB /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		83C8A0D12650254B001A53CB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				83071271264E12C900FEB56C /* Main.storyboard */,
 				83071276264E12CA00FEB56C /* LaunchScreen.storyboard */,
 				8336996B264E5C0700F43368 /* Detail.storyboard */,
+				83C8A0CD26502519001A53CB /* Profile.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				83369969264E5BD100F43368 /* Detail.swift */,
 				83071283264E2A1100FEB56C /* RestaurantCell.swift */,
 				83C8A0CB26501956001A53CB /* MenuCell.swift */,
+				83C8A0D12650254B001A53CB /* Profile.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 			files = (
 				83071278264E12CA00FEB56C /* LaunchScreen.storyboard in Resources */,
 				83071275264E12CA00FEB56C /* Assets.xcassets in Resources */,
+				83C8A0CE26502519001A53CB /* Profile.storyboard in Resources */,
 				83071273264E12C900FEB56C /* Main.storyboard in Resources */,
 				8336996C264E5C0700F43368 /* Detail.storyboard in Resources */,
 			);
@@ -194,6 +201,7 @@
 				83369968264E59D200F43368 /* RestaurantBrief.swift in Sources */,
 				83C8A0CC26501956001A53CB /* MenuCell.swift in Sources */,
 				8307126C264E12C900FEB56C /* AppDelegate.swift in Sources */,
+				83C8A0D22650254B001A53CB /* Profile.swift in Sources */,
 				8307126E264E12C900FEB56C /* SceneDelegate.swift in Sources */,
 				83071280264E12DF00FEB56C /* Networking.swift in Sources */,
 			);
