@@ -15,6 +15,12 @@ class Detail: UIViewController {
   @IBOutlet weak var restaurantRating: UILabel!
   @IBOutlet weak var restaurantPicture: UIImageView!
   @IBOutlet weak var menuList: UITableView!
+  @IBOutlet weak var menuHeightConstraint: NSLayoutConstraint!
+
+  var menuHeight: CGFloat {
+    menuList.layoutIfNeeded()
+    return menuList.contentSize.height
+  }
 
   var restaurant: RestaurantBrief?
   var detail: Restaurant? {
@@ -31,6 +37,7 @@ class Detail: UIViewController {
       }
       menus = [detail.menus.foods, detail.menus.drinks]
       menuList.reloadData()
+      menuHeightConstraint.constant = menuHeight
     }
   }
 
