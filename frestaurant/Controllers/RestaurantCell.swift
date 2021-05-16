@@ -9,14 +9,19 @@ import UIKit
 
 class RestaurantCell: UITableViewCell {
 
+  // MARK: - Outlets
   @IBOutlet weak var restaurantImage: UIImageView!
   @IBOutlet weak var restaurantRating: UILabel!
   @IBOutlet weak var restaurantName: UILabel!
   @IBOutlet weak var restaurantLocation: UILabel!
+
+  // MARK: - Properties
   var restaurant: RestaurantBrief?
   let axios = Axios.shared
 
   override func layoutSubviews() {
+    super.layoutSubviews()
+
     if let restaurant = restaurant {
       restaurantName.text = restaurant.name
       restaurantLocation.text = restaurant.city
@@ -31,6 +36,7 @@ class RestaurantCell: UITableViewCell {
         }
       }
     }
+
   }
 
 }

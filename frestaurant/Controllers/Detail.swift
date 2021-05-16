@@ -83,6 +83,7 @@ extension Detail: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! MenuCell
     cell.textLabel?.text = menus[indexPath.section][indexPath.row].name
+    cell.textLabel?.font = cell.textLabel?.font.withSize(18)
     return cell
   }
 
